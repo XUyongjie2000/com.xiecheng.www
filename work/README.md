@@ -1,2 +1,2 @@
-# XuYongJie
-每日作业
+# com.xiecheng.www
+我的第一个项目
