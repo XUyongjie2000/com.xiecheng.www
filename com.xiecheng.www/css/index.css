@@ -1,0 +1,15 @@
+/*  顶部导航 */
+.topnav {
+  width: 100%;
+  height: 36px;
+  background-color: #f4f4f4;
+}
+.topnav-left {
+  float: left;
+}
+.topnav-right {
+  float: right;
+}
+.topnav-right a {
+  color: #666666;
+}
