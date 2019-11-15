@@ -8,7 +8,7 @@
   color: #666666;
   line-height: 36px;
   float: left;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 .topnav-right {
   float: right;
@@ -18,11 +18,17 @@
   float: left;
   color: #666666;
   line-height: 36px;
-  margin: 0 10px;
+  margin: 0 15px;
 }
 .topnav-right a:nth-child(2):hover,
 .topnav-right a:nth-child(6):hover {
   color: #0066cc;
+}
+
+.topnav-right span {
+  float: left;
+  line-height: 36px;
+  color: #dddddd;
 }
 .topnav-right .lan i {
   color: #0066cc;
