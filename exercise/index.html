@@ -1,453 +1,49 @@
-项目搭建
+<!DOCTYPE html>
+<html lang="en">
 
-- 项目名称 
-  - 首页文件 index.html index.html 是固定写法 只要是首页就写index.html
-  - css文件夹   这里放的是css文件，必须是自己写的
-  - lib文件夹   意思是library 库 只要是第三方的库都放在这里 无论是css库还是js库
-  - img文件夹   意思是image  图片 只要是很长时间在网页中不变的图片都放在这里
-  - upload文件夹 意思是上传的图片 这里的图片一定是用户上传的
-  - fonts文件夹  是放新字体的 还有字体图标库里的字体文件的(5种 ttf eot woff woff2 svg)
-  - video文件夹  用来放视频
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>携程旅行网官网：酒店预订，机票预定查询，旅游度假，商旅管理</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description"
+    content="携程旅行网是中国领先的在线旅行服务公司，向超过9000万会员提供酒店预订、酒店点评及特价酒店查询、机票预订、飞机票查询、时刻表、票价查询、航班查询、度假预订、商旅管理、为您的出行提供全方位旅行服务。">
+  <meta name="keywords" content="酒店预订,特价酒店, 机票,机票预订,飞机票查询,航班查询,酒店团购,旅游度假,旅行,商旅管理">
+  <link rel="stylesheet" href="./lib/reset/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
 
-favicon制作和使用
+<body>
+  <div class="topnav">
+    <div class="container">
+      <div class="topnav-left">
+        <ul>
+          <li>让旅行更幸福</li>
+          <li><span><i class="iconfont">&#xe60a;</i>Language</span><i class="iconfont san">&#xe665;</i></li>
+        </ul>
 
-- 先准备一张方形图片  图片大小不能超过500k
-- 进入 http://www.bitbug.net/ 
-- 上传图片 选择尺寸 点击生成ico图标 然后会自动下载
-- 把格式为.ico的图片放在项目的根目录(项目文件夹里面)
-- 在首页的head标签引入 快捷方式为: link:favicon
-
-TDK搜索引擎优化
-
-- title: 网页标题 title 具有不可替代性，是我们内页的第一个重要标签，是搜索引擎了解网页的入口和对网页主题归属的最佳判断点。
-  - 格式: 网站名(产品名)-网站的介绍(尽量不要超过30个汉字)
-- description: 网站描述 简要说明我们网站主要是做什么的。
-- keywords: keywords 是页面关键词，是搜索引擎的关注点之一。 keywords 最好限制为 6~8 个关键词，关键词之间用英文逗号隔开，采用 关键词1,关键词2 的形式。
-
-
-
-布局代码 
-
-第一部分: 顶部导航
-
-布局分析
-
-
-
-HTML代码：
-
-      <!-- 1.顶部导航 -->
-      <div class="topnav">
-        <div class="container clearfix">
-          <div class="topnav-left">
-            <a href="#">登录</a>
-            <a href="#">注册</a>
-            <a href="#">
-              <img src="./upload/topnav-left.gif" alt="">
-            </a>
-          </div>
-          <ul class="topnav-right clearfix">
-            <li><a href="#">我的订单</a></li>
-            <li><a href="#">帮助中心</a></li>
-            <li class="myyxk"><span>我的游侠客</span>
-              <ul>
-                <li><a href="">我的游侠客</a></li>
-                <li><a href="">订单中心</a></li>
-                <li><a href="">我的社区</a></li>
-                <li><a href="">我的等级</a></li>
-                <li><a href="">账户管理</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="" class="app">
-                <i class="iconfont">&#xe604;</i>
-                <b>手机APP</b>
-                <span class="wechat">
-                  <img src="./img/topnav-right-app.png" alt="">
-                </span>
-              </a>
-            </li>
-            <li><a href=""><i class="iconfont">&#xe61e;</i> <img src="./img/topnav-right-xcx.png" alt=""></a></li>
-            <li><a href=""><i class="iconfont">&#xe63d;</i></a></li>
-            <!-- 我认为这是图标 icon 所以我用i标签 -->
-            <li><a href="" class="app"><i class="iconfont">&#xe637;</i><span class="wechat"><img
-                    src="./img/topnav-right-wx.png" alt=""></span></a>
-            </li>
-          </ul>
-        </div>
       </div>
+      <div class="topnav-right">
 
-样式引入代码：
-
-      <!-- 注意: 一定要先引入 重置样式 再引入公共样式 最后引入某个页面的样式    -->
-      <link rel="stylesheet" href="./lib/reset/reset.css">
-      <link rel="stylesheet" href="./css/common.css">
-      <link rel="stylesheet" href="./css/index.css">
-
-      body {
-      background-color: #2b2b2b;
-    }
-    /* 1.顶部导航 */
-    .topnav {
-      width: 100%;
-      height: 28px;
-      background-color: #2b2b2b;
-      border-bottom: 1px solid #222222;
-    }
-    /* 辅助 */
-    /* .topnav .container {
-      background-color: rgba(255,255,255,0.5);
-    } */
-    
-    .topnav-left {
-      float: left;
-    }
-    
-    .topnav-left a {
-      float: left;
-      color: #ccc;
-      line-height: 28px;
-      margin: 0 10px;
-    }
-    
-    .topnav-left a:hover {
-      color: #ff9d00;
-    }
-    
-    .topnav-right {
-      float: right;
-    }
-    
-    .topnav-right > li {
-      float: left;
-    }
-    
-    .topnav-right .myyxk {
-      position: relative;
-      width: 85px;
-    
-    }
-    
-    .topnav-right .myyxk:after {
-        content: '';
-        position: absolute;
-        top: 11px;
-        right: 4px;
-        width: 8px;
-        height: 4px;
-        background-image: url(../img/xiasanjiao.png);
-    }
-    
-    .topnav-right .myyxk span {
-      color: #ccc;
-    }
-    
-    .topnav-right .myyxk:hover {
-      background-color: #fff;
-    }
-    
-    .topnav-right .myyxk:hover span {
-      color: #555;
-    }
-    
-    .topnav-right .myyxk:hover ul {
-      display: block;
-    }
-    
-    .topnav-right .myyxk ul a:hover {
-      background-color: #fdd000;
-      color: #fff;
-    }
-    
-    .topnav-right > li > ul {
-      position: absolute;
-      display: none;
-      top: 28px;
-      left: 0;
-    
-      width: 85px;
-      background-color: #fff;
-    }
-    
-    .topnav-right > li  li {
-      width: 100%;
-      height: 28px;
-    }
-    
-    .topnav-right > li li a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      color: #555;
-      font-size: 12px;
-      text-align: center;
-      line-height: 28px;
-      margin: 0;
-      
-    }
-    
-    .topnav-right a,
-    .topnav-right span {
-      position: relative;
-      line-height: 28px;
-      color: #ccc;
-      margin: 0 10px;
-    
-    }
-    
-    .topnav-right a:hover {
-      color: #ff9d00;
-    }
-    
-    .topnav-right i {
-      font-size: 22px;
-    }
-    
-    .topnav-right .app {
-      display: block;
-    }
-    
-    .topnav-right .app span {
-      float: right;
-      margin: 0;
-      line-height: 28px;
-    }
-    
-    .topnav-right .app:hover span {
-      color: #ff9d00;
-    }
-    
-    .topnav-right .app i {
-      color: #fdd000;
-    }
-    
-    .topnav-right a > img {
-      display: none;
-      position: absolute;
-      top: 12px;
-      left: -64px;
-    }
-    
-    .topnav-right a:hover  img {
-      display: block;
-    }
-    
-    .topnav-right li:last-child  .app i {
-      color: #ccc;
-    }
-    
-    .topnav-right li:nth-last-child(-n+3) a:hover i {
-      color: #fdd000;
-    }
-    
-    .topnav-right .app .wechat img {
-      width: 130px;
-      height: 130px;
-    }
-    
-    /* input img 不能添加before和after */
-    .topnav-right .app .wechat {
-      position: absolute;
-      display: none;
-      top: 36px;
-      left: -63px;
-      height: 130px;
-      padding: 10px;
-      background-color: #ffffff;
-    }
-    
-    .topnav-right  .app:hover .wechat {
-      display: block;
-    }
-    
-    .topnav-right .app  .wechat:after {
-      content: '';
-      position: absolute;
-      top: -18px;
-      left: 50%;
-      margin-left: -8px;
-      width: 0;
-      height: 0;
-      border-top: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-bottom: 10px solid #fff;
-      border-left: 8px solid transparent;
-    }
-    
-    
-
-结构伪类
-
-元素:first-child
-
-  选中第一个子元素
-
-元素:last-child
-
-  选中最后一个子元素
-
-元素:nth-child(表达式)
-
-  选中第表达式个子元素
-
-- 普通数字 2  3  8 11 110
-- 取偶数个元素 2n 
-- 取奇数个元素 2n+1 2n-1
-- 取前几个元素 -n+几
-- odd(奇数) even(偶数) 
-
-元素:nth-last-child()
-
-  倒着数第表达式个子元素
-  和nth-child(表达式类似)
-
-第二部分 搜索区域
-
-布局分析
-
-
-
-html代码
-
-    <!-- 2.搜素区域 -->
-      <div class="search">
-        <!-- 2.1 版心 -->
-        <div class="container clearfix">
-          <!-- 2.1.1 logo -->
-          <img src="./img/logo.png" class="search-logo" alt="">
-          <!-- 2.1.2 搜索框  -->
-          <div class="search-area clearfix">
-            <!-- 2.1.2.1 搜索城市 -->
-            <div class="searc-area-city">
-              <span>南京站</span>
-            </div>
-            <!-- 2.1.2.2 搜索框 -->
-            <div class="search-area-box clearfix">
-              <!-- 2.1.2.2.1 搜索框 输入 -->
-              <div class="search-area-box-input clearfix">
-                <span>综合</span>
-                <input type="text">
-              </div>
-              <!-- 2.1.2.2.2 搜索框 按钮 -->
-              <button>搜索</button>
-            </div>
-    
-          </div>
-          <!-- 2.1.3 服务热线 -->
-          <div class="search-hotline">
-            <img src="./img/search-area-hotline.png" alt="">
-          </div>
-          <!-- 2.1.4 在线客服 -->
-          <img src="./img/search_service.png" class="search-service" alt="">
-        </div>
-    
+        <a href="#" style="color: #0066CC;">您好，请登录</a>
+        <a href="#">免费注册</a>
+        <span>|</span>
+        <a href="#"><i class="iconfont">&#xe7aa;</i>消息</a>
+        <span>|</span>
+        <a href="#">我的携程<i class="iconfont san">&#xe665;</i></a>
+        <span>|</span>
+        <a href="#">我的订单<i class="iconfont san">&#xe665;</i></a>
+        <span>|</span>
+        <a href="#">客服中心</a>
+        <span>|</span>
+        <a href="" class="lan"><i class="iconfont">&#xe615;</i><img src="./img/xc.png" alt=""></a>
+        <a href="" class="lan"><i class="iconfont">&#xe659;</i><img src="./img/wx.png" alt=""></a>
       </div>
+      <div></div>
+    </div>
+  </div>
+</body>
 
-css代码
-
-    /* 第二部分: 搜索 */
-    .search {
-      height: 120px;
-      background-color:#333;
-    }
-    
-    
-    .search-logo {
-      float: left;
-      margin-left: 15px;
-      margin-top: 35px;
-    }
-    
-    .search-area {
-      float: left;
-      width: 648px;
-      height: 40px;
-      margin-left: 125px;
-      margin-top: 40px;
-    }
-    
-    .searc-area-city {
-      float: left;
-    }
-    
-    .searc-area-city span {
-      font-size: 16px;
-      color: #fdd000;
-      line-height: 40px;
-      background-image: url(../img/search-area-xsj.png);
-      background-repeat: no-repeat;
-      background-position: right center;
-      padding-right: 14px;
-    }
-    
-    .search-area-box {
-      float: left;
-      width: 564px;
-      height: 40px;
-      /* border-box包括边框包括padding的盒子大小 */
-      /* 总的大小就是564 你加上之后 盒子会自动缩小 */
-      box-sizing: border-box;
-      border: 2px solid #fdd000;
-      margin-left: 18px;
-    }
-    
-    .search-area-box-input {
-      float: left;
-      width: 430px;
-      height: 36px;
-    }
-    
-    .search-area-box-input span {
-      float: left;
-      color: #afaaaa;
-      width: 52px;
-      height: 100%;
-      line-height: 36px;
-      text-align: center;
-    
-      background-image: url(../img/xiasanjiao.png);
-      background-repeat: no-repeat;
-      background-position: right center;
-    }
-    
-    .search-area-box-input  input {
-      float: right;
-      width: calc(430px - 52px);
-      height: 36px;
-      border: none;
-      background-color: transparent;
-      color: #deffff;
-      line-height: 36px;
-    }
-    
-    .search-area-box button {
-      float: right;
-      width: 130px;
-      height: 36px;
-      background-color: #fdd000;
-      border:none;
-      font-size: 18px;
-      font-weight: 700;
-    }
-    
-    .search-hotline {
-      float: left;
-      margin-top: 40px;
-      margin-left: 20px;
-    }
-    
-    .search-service {
-      position: absolute;
-      bottom: -42px;
-      right: -102px;
-    }
-
-盒子尺寸
-
-- box-sizing: content-box | border-box
-
-calc() 自动计算
-
-- 四则运算 加法 减法  乘法 除法  
-
-+ - * / 两边要加空格 比如: calc(2px+3px)  --> calc(2px + 3px)
+</html>
