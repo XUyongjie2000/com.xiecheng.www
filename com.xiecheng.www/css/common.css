@@ -10,3 +10,9 @@
 .clearfix {
   *zoom: 1;
 }
+/* 版心 */
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 1180px;
+}

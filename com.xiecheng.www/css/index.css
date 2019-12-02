@@ -1,0 +1,103 @@
+.topnav {
+  width: 100%;
+  height: 36px;
+  color: #333;
+  background: #f4f4f4;
+}
+.topnav-left {
+  float: left;
+}
+.topnav-left a,
+.topnav-left span {
+  line-height: 36px;
+  color: #666666;
+  margin: 0 10px;
+}
+.topnav-right {
+  float: right;
+}
+.topnav-right li {
+  float: left;
+}
+.topnav-right a,
+.topnav-right span {
+  line-height: 36px;
+  color: #666666;
+  margin: 0 10px;
+}
+.topnav-right .none {
+  display: none;
+}
+.topnav .tr-blue:hover {
+  color: #0066cc;
+}
+.topnav-right li:nth-child(4):hover span {
+  display: block;
+}
+.topnav-right li:nth-child(4):hover {
+  background-color: #ffffff;
+}
+.topnav-right li:nth-child(5):hover span {
+  display: block;
+}
+.topnav-right li:nth-child(5):hover {
+  background-color: #ffffff;
+}
+.topnav-right li:nth-child(4) {
+  position: relative;
+  display: inline-block;
+  width: 92px;
+  color: #666;
+  text-align: center;
+  border: 1px solid transparent;
+  border-bottom: none;
+}
+.topnav-right li:nth-child(5) {
+  position: relative;
+  display: inline-block;
+  width: 92px;
+  color: #666;
+  text-align: center;
+  border: 1px solid transparent;
+  border-bottom: none;
+}
+/* 搜索栏 */
+.search {
+  width: 100%;
+  height: 80px;
+  float: left;
+}
+.search .logo {
+  float: left;
+}
+.search .search-button {
+  float: left;
+}
+.search ul {
+  float: right;
+}
+.search .tel-list-more {
+  display: none;
+}
+/* .search.box-phone-number .tel-list-more:hover li {
+  display: block;
+} */
+.search input {
+    padding: 0 45px 0 5px;
+    float: left;
+    width: 340px;
+    height: 30px;
+}
+.search-button{
+    position: relative;
+
+}
+.search-button button {
+  position: absolute;
+  right: 0;
+  float: left;
+  width: 42px;
+  height: 30px;
+  background-color: #a4cbff;
+  border: none;
+}
