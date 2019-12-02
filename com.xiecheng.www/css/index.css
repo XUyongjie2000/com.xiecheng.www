@@ -83,14 +83,13 @@
   display: block;
 } */
 .search input {
-    padding: 0 45px 0 5px;
-    float: left;
-    width: 340px;
-    height: 30px;
+  padding: 0 45px 0 5px;
+  float: left;
+  width: 340px;
+  height: 30px;
 }
-.search-button{
-    position: relative;
-
+.search-button {
+  position: relative;
 }
 .search-button button {
   position: absolute;
@@ -100,4 +99,23 @@
   height: 30px;
   background-color: #a4cbff;
   border: none;
+}
+/* 导航栏 */
+.navigation {
+  width: 100%;
+  background-color: #2577e3;
+  float: left;
+  height: 40px;
+}
+.navigation-top i {
+  color: #0459ad;
+  line-height: 40px;
+  float: left;
+}
+.navigation-top a {
+  padding: 0 13px;
+  line-height: 40px;
+  color: #ffffff;
+  font-size: 15px;
+  float: left;
 }
