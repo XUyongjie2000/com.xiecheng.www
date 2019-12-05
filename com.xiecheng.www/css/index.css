@@ -173,7 +173,7 @@ a {
 }
 
 .container {
-  height: auto;
+  height: 440px;
   overflow: hidden;
 }
 
@@ -389,4 +389,46 @@ a {
 .hotspot-left-list-2 {
   width: 220px;
   height: 170px;
+}
+/* 选项栏 */
+.cont_main span {
+  color: #666666;
+}
+.cont_main s {
+  color: #f60;
+  font-size: 22px;
+}
+.cont_main .cont-r {
+  float: right;
+}
+.cont_main .cont-c {
+  color: #ff4646;
+}
+.cont-left {
+  float: left;
+  width: 187px;
+  height: 360px;
+  padding: 0 20px 15px;
+}
+.cont-left h4 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.cont-left .h4-2 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.cont-left a {
+  margin: 0 0 0 220px;
+  color: #666666;
+}
+.cont-left a:hover {
+  color: #3983e6;
+}
+.hotspot-left-list img {
+  width: 220px;
+  height: 160px;
 }
