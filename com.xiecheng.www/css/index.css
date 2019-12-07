@@ -438,3 +438,94 @@ a {
 .cont-left .h4-4 {
   margin-top: 90px;
 }
+.cont-left .h4-5 {
+  margin-top: 80px;
+}
+.hotspot-left-list-2 .qiangzhi {
+  margin-right: 110px;
+}
+.hotspot-left-list-2 .cont-wz {
+  color: #999999;
+}
+.hotspot-left-list-2 .qiangzhi-2 {
+  margin-right: 40px;
+}
+.hotspot-left-list-2 .qiangzhi-3 {
+  margin-right: 10px;
+}
+.hotspot-left-list-2 .qiangzhi-4 {
+  margin-right: 10px;
+}
+.hotspot-left-list-2 .qiangzhi-5 {
+  margin-right: 61px;
+}
+.hotspot-left-list-2 .qiangzhi-6 {
+  margin-right: 38px;
+}
+.hotspot-left-list-2 .qiangzhi-7 {
+  margin-right: 124px;
+}
+.hotspot-left-list-2 .qiangzhi-8 {
+  margin-right: 134px;
+}
+.hotspot-left-list-2 .qiangzhi-9 {
+  margin-right: 52px;
+}
+.hotspot-left-list-2 .qiangzhi-10 {
+  margin-right: 123px;
+}
+.hotspot-left-list-2 .qiangzhi-11 {
+  margin-right: 62px;
+}
+.jipiao-list {
+  float: left;
+  width: 215px;
+  height: 105px;
+  background-color: #f8f8f8;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.hotspot-left-list-3 {
+  float: left;
+  width: 215px;
+  height: 105px;
+  background-color: #f8f8f8;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.jipiao-list-1 {
+  display: block;
+  margin-top: 13px;
+  margin-left: 20px;
+  color: #333333;
+}
+.jipiao-list-2 {
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #999999;
+}
+.jipiao-list-3 {
+  display: block;
+  margin-top: 18px;
+  margin-left: 20px;
+  color: #333333;
+}
+.jipiao-list-3 s {
+  font-size: 22px;
+  color: #ff6600;
+}
+.jipiao-list-4 {
+  width: 50px;
+  height: 30px;
+  margin-top: -25px;
+  background-color: #ffb000;
+  float: right;
+  color: #ffffff;
+  font-size: 14px;
+  margin-right: 10px;
+  line-height: 30px;
+  text-align: center;
+}
+.hotspot-left-list-3 .jipiao-list-4 {
+  color: #ffffff;
+}
