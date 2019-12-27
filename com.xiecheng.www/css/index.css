@@ -733,3 +733,48 @@ a {
 .btn > p {
   color: #ffffff;
 }
+
+.foot_1,
+.foot_2,
+.foot_3,
+.foot_4,
+.foot_5 {
+  height: 150px;
+  width: 230px;
+  /*background-color: pink;*/
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-right: 1px dashed #dedede;
+  overflow: hidden;
+}
+
+.p {
+  margin-top: 5px;
+  margin-left: 40px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.foot_one,
+.foot_five {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 100px;
+  width: 200px;
+}
+
+.foot_five {
+  border: 2px solid #dedede;
+  margin-top: 10px;
+  margin-left: 30px;
+  height: 145px;
+  width: 125px;
+}
+
+.foot_foot {
+  height: 130px;
+  width: 1360px;
+  margin-top: 10px;
+  margin-left: 100px;
+}
