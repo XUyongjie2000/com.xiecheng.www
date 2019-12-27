@@ -19,12 +19,16 @@
 .topnav-right li {
   float: left;
 }
+.topnav-right .xyjblue {
+  color: #00a4ff;
+}
 .topnav-right a,
 .topnav-right span {
   line-height: 36px;
   color: #666666;
   margin: 0 10px;
 }
+
 .topnav-right .none {
   display: none;
 }
