@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./lib/reset/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="css/base.css">
 </head>
 
 <body>
@@ -127,12 +128,95 @@
             </div>
         </div>
     </div>
-    <div class="carousel">
-        <div class="container">
-            <div class="carousel-list">
+    <div class="return">
+
+        <ul class="return_ul">
+
+            <li class="return_li"><a class="return_a" href=""><img src="images/1.jpg" alt=""></a></li>
+            <li class="return_li"><a class="return_a" href=""><img src="images/2.jpg" alt=""></a></li>
+            <li class="return_li"><a class="return_a" href=""><img src="images/3.jpg" alt=""></a></li>
+            <li class="return_li"><a class="return_a" href=""><img src="images/4.jpg" alt=""></a></li>
+            <li class="return_li"><a class="return_a" href=""><img src="images/5.jpg" alt=""></a></li>
+            <li class="return_li"><a class="return_a" href=""><img src="images/6.jpg" alt=""></a></li>
+            <li class="return_li"><a class="return_a" href=""><img src="images/7.jpg" alt=""></a></li>
+            <div class="return_left">
+                <div class="return_left_left">
+                    <ul class="return_left_ul">
+                        <li class="return_left_li">酒店</li>
+                        <li class="return_left_li">机票</li>
+                        <li class="return_left_li">自由行</li>
+                        <li class="return_left_li">旅游</li>
+                        <li class="return_left_li">火车</li>
+                        <li class="return_left_li">用车</li>
+                        <li class="return_left_li">门票</li>
+                    </ul>
+                </div>
+                <div class="return_left_right">
+                    <ul class="return_left_right_ul">
+                        <li class="return_left_right_li">
+                            <div id="div1">
+                                <ul id="ul1">
+                                    <li class="id_li1">国内酒店</li>
+                                    <li class="id_li1"> 海外酒店</li>
+                                    <li class="id_li1">酒店团购</li>
+                                    <li class="id_li1">酒店+景点</li>
+                                    <li class="id_li1">会议.团房.常住</li>
+                                </ul>
+                                <div id="ul1_1">
+                                    <form action="" method="get">
+                                        <div class="mudidi">目的地<input type="text" value=" 北京" id="text0"></div>
+                                        <div class="ruzhushijian">入住时间 <input type="text" value="" id="text1">
+                                            退房时间 <input type="text" value="" id="text2">
+                                        </div>
+                                        <div class="fangjian">房间 <input type="text" value=" 1间" class="text1">
+                                            住客数 <input type="text" value=" 1成人" class="text2">
+                                        </div>
+                                        <div class="jibie">酒店级别 <input type="text" value=" 不限" class="text3">
+                                            关键词 <input type="text" value=" (选填)酒店名/地标/商圈" class="text4">
+                                        </div>
+
+                                        <div class="btn">
+                                            <p class="btn_p">搜索</p>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="return_left_right_li">
+                            你好1
+                        </li>
+                        <li class="return_left_right_li">
+                            你好2
+                        </li>
+                        <li class="return_left_right_li">
+                            你好3
+                        </li>
+                        <li class="return_left_right_li">
+                            你好4
+                        </li>
+                        <li class="return_left_right_li">
+                            你好5
+                        </li>
+                        <li class="return_left_right_li">
+                            你好6
+                        </li>
+                    </ul>
+                </div>
 
             </div>
-        </div>
+            <div class="return_button">
+                <li class="return_button_li"></li>
+                <li class="return_button_li"></li>
+                <li class="return_button_li"></li>
+                <li class="return_button_li"></li>
+                <li class="return_button_li"></li>
+                <li class="return_button_li"></li>
+                <li class="return_button_li"></li>
+            </div>
+        </ul>
+
     </div>
     <div class="container">
         <div class="price">
@@ -1501,6 +1585,32 @@
 
         </div>
     </div>
+
+
+    <script src="jquery/jquery-1.12.4.js"></script>
+    <script src="jquery/nprogress.js"></script>
+    <script>
+        $(function () {
+            //轮播图
+            $(".return_button>li").mouseenter(function () {
+                $(".return>.return_ul>li").eq($(this).index()).show().siblings("li").hide();
+            });
+            //表单轮播
+            $(".return_left_ul>li").click(function () {
+                $(".return_left_right_ul>li").eq($(this).index()).show().siblings("li").hide();
+                $(".return_left_ul>li").eq($(this).index()).addClass("li_hover").siblings("li").removeClass("li_hover");
+            });
+
+            //日期js代码
+            var da = new Date();
+            var year = da.getFullYear() + '年';
+            var month = da.getMonth() + 1 + '月';
+            var date = da.getDate() + '日';
+            var d = parseInt(date) + 1;
+            $('#text1').val(year + " " + month + " " + date);
+            $('#text2').val(year + " " + month + " " + d + "日");
+        });
+    </script>
 </body>
 <script src="./js/jquery.min.js"></script>
 <script type="text/javascript">

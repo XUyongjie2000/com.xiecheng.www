@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .header{
+            width: 100%;
+            height: 80px;
+
+            padding: 10px;
+
+
+        }
+        .top{
+            height: 80px;
+            width: 200px; 
+            background-image: url("images/logo.png");
+          background-size: cover;
+            margin-left: 350px;
+        }
+        .message{
+            height: 40px;
+            width: 100%;
+            background-color: #fffcd8;
+        }
+        .Mcontent{
+            height: 40px;
+            width: 1000px;
+            margin: 0 auto;
+            line-height: 40px;
+            color: #666666;
+        }
+        .img{
+            height: 540px;
+            width: 1920px;
+            background-image: url("images/haha.jpg");
+            margin: 0 auto;
+            position: relative;
+        }
+        .form{
+            height: 450px;
+            width: 400px;
+            position: absolute;
+            background-color: #fff;
+            right: 550px;
+            top: 50px;
+            border-radius: 5px;
+
+        }
+        p{
+            margin-left: 50px;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        .username{
+            height: 30px;
+            width: 300px;
+            margin-top: 20px;
+           margin-left: 50px;
+
+        }
+        .password{
+            height: 30px;
+            width: 300px;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+        .login{
+            height: 30px;
+            width: 300px;
+            background-color: #ff9a14;
+            line-height: 30px;
+            text-align: center;
+            margin-left: 50px;
+            margin-top: 50px;
+            color: #ffffff;
+            border: 2px;
+        }
+        .hah2{
+            height: 100px;
+            width: 300px ;
+           background-image: url("images/haha2.png");
+           background-size: cover;
+            margin-top:60px;
+            float: left;
+        }
+        .zc{
+            margin-top:80px;
+            height: 20px;
+            width: 80px;
+            float: left;
+        }
+        .shenqing{
+            height: 30px;
+            width: 100%;
+            line-height: 30px;
+            text-align: center;
+            color: #999999;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="top"></div>
+</div>
+<div class="message">
+    <div class="Mcontent">依据《网络安全法》，为保障您相关功能的正常使用，请尽快完成手机注册，新版《隐私政策》已上线，感谢您的支持。</div>
+</div>
+
+<div class="img">
+
+    <div class="form">
+        <form action="LoginServlet" method="post">
+
+            <p>携程账号登陆</p>
+
+                <tr>
+                    <td><input class="username" name="username" type="text"  placeholder="  国内手机号/用户名/邮箱/卡号"></td>
+                </tr>
+                <tr>
+                    <td><input  class="password" name="password" type="password" placeholder="  请您输入密码"></td>
+                </tr>
+            </table>
+            <br>
+            <input class="login" type="submit" value="登  陆">
+            <div class="shenqing">
+                登陆即代表您同意我们的 服务协议 和 隐私政策
+            </div>
+            <div class="hah2">
+
+            </div>
+            <div class="zc">
+                <a href="">免费注册</a>
+            </div>
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
