@@ -39,12 +39,14 @@
   display: block;
 }
 .topnav-right li:nth-child(4):hover {
+  z-index: 2;
   background-color: #ffffff;
 }
 .topnav-right li:nth-child(5):hover span {
   display: block;
 }
 .topnav-right li:nth-child(5):hover {
+  z-index: 2;
   background-color: #ffffff;
 }
 .topnav-right li:nth-child(4) {
@@ -88,6 +90,8 @@
   display: block;
 } */
 .search input {
+  margin-left: 200px;
+  margin-top: 20px;
   padding: 0 45px 0 5px;
   float: left;
   width: 340px;
@@ -97,6 +101,7 @@
   position: relative;
 }
 .search-button button {
+  margin-top: 20px;
   position: absolute;
   right: 0;
   float: left;
@@ -540,7 +545,6 @@ a {
   height: 340px;
   width: 1820px;
   position: absolute;
-  float: left;
 }
 
 .return_ul {
@@ -777,4 +781,34 @@ a {
   width: 1360px;
   margin-top: 10px;
   margin-left: 100px;
+}
+.foot_2 span {
+  float: left;
+  padding: 10px;
+  color: #666666;
+}
+.foot_3 span {
+  float: left;
+  color: #666666;
+  padding: 10px;
+}
+.foot_4 span {
+  float: left;
+  color: #666666;
+  padding: 10px;
+}
+.foot_foot p {
+  margin-left: 350px;
+  color: #999999;
+}
+.foot_foot .guohuip {
+  margin-left: 480px;
+}
+.hotspot-left-list-4 {
+  width: 220px;
+  height: 170px;
+}
+.hotspot-left-list-4 img {
+  width: 228px;
+  height: 132px;
 }

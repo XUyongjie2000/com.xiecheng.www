@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        *{
+        * {
             padding: 0px;
             margin: 0px;
         }
-        .header{
+
+        .header {
             width: 100%;
             height: 80px;
 
@@ -16,47 +18,54 @@
 
 
         }
-        .top{
-            height: 80px;
-            width: 200px;
+
+        .top {
+            height: 70px;
+            width: 130px;
             margin: 0 auto;
             background-image: url("images/logo.png");
             background-size: cover;
             margin-left: 350px;
         }
-        .fo{
+
+        .fo {
 
             margin-top: 10px;
             height: 500px;
             width: 100%;
         }
-        .foom{
+
+        .foom {
             height: 500px;
             width: 1000px;
 
             margin: 0 auto;
 
         }
+
         .select {
             height: 45px;
             width: 130px;
             margin-left: 20px;
         }
-        .phone{
+
+        .phone {
             height: 45px;
             width: 300px;
             margin-left: 10px;
 
         }
-        .pp{
+
+        .pp {
             height: 50px;
             width: 100%;
             margin-left: 40px;
             line-height: 50px;
-           margin-left: 200px;
+            margin-left: 200px;
             font-size: 30px;
         }
-        .ppp{
+
+        .ppp {
             height: 50px;
             line-height: 50px;
             width: 50px;
@@ -64,56 +73,67 @@
 
             margin-left: 150px;
         }
-        .ming2{
+
+        .ming2 {
             height: 50px;
             line-height: 50px;
             width: 440px;
             float: left;
             margin-left: 20px;
         }
-        .username2{
+
+        .username2 {
             height: 50px;
             width: 50px;
-            float: left;display: block;
+            float: left;
+            display: block;
             margin-left: 150px;
             line-height: 50px;
         }
-        .div1{
+
+        .div1 {
             height: 50px;
             width: 100%;
         }
-        .div2{
+
+        .div2 {
             margin-top: 20px;
             height: 50px;
             width: 100%;
         }
-        .div3{
+
+        .div3 {
             margin-top: 20px;
             height: 50px;
             width: 100%;
         }
-        .p3{
+
+        .p3 {
             height: 50px;
             width: 50px;
-            float: left;display: block;
+            float: left;
+            display: block;
             margin-left: 150px;
             line-height: 50px;
         }
-    .pd{
-        height: 50px;
-        line-height: 50px;
-        width: 440px;
-        float: left;
-        margin-left: 20px;
-    }
-        .regester{
+
+        .pd {
+            height: 50px;
+            line-height: 50px;
+            width: 440px;
+            float: left;
+            margin-left: 20px;
+        }
+
+        .regester {
             height: 40px;
             width: 440px;
             background-color: #ff9a14;
             margin-top: 50px;
-            margin-left:220px;
+            margin-left: 220px;
         }
-        .mess{
+
+        .mess {
             height: 20px;
             width: 400px;
             margin-left: 300px;
@@ -121,52 +141,55 @@
         }
     </style>
 </head>
+
 <body>
-<div class="header">
-    <div class="top"></div>
-</div>
-<div class="fo">
+    <div class="header">
+        <div class="top"></div>
+    </div>
+    <div class="fo">
 
-    <form class="foom" action="RegisterServlet" method="post">
+        <form class="foom" action="RegisterServlet" method="post">
 
-          <p class="pp">携程注册页面</p>
-                <div class="div1">
-                    <p class="ppp">手机号</p>
-                    <select class="select">
-                        <option value="中国大陆+ 8 6" label="中国大陆+ 8 6" ></option>
-                        <option value="中国台湾+ 8 5 " label="中国台湾+ 8 5"></option>
-                    </select>
-                    <input id="phone" class="phone" name="phone" type="text" placeholder=" 请输入合法手机号" size="20" required pattern="^1/d{10}$"/>
+            <p class="pp">携程注册页面</p>
+            <div class="div1">
+                <p class="ppp">手机号</p>
+                <select class="select">
+                    <option value="中国大陆+ 8 6" label="中国大陆+ 8 6"></option>
+                    <option value="中国台湾+ 8 5 " label="中国台湾+ 8 5"></option>
+                </select>
+                <input id="phone" class="phone" name="phone" type="text" placeholder=" 请输入合法手机号" size="20" required
+                    pattern="^1/d{10}$" />
 
-                </div>
+            </div>
 
 
             <div class="div2">
                 <p class="username2">登录名</p>
-                <input  class="ming2" name="name" type="text" size="20" placeholder=" 请输入合法账号">
+                <input class="ming2" name="name" type="text" size="20" placeholder=" 请输入合法账号">
             </div>
 
-        <div class="div3">
-            <p class="p3">密码：</p>
-            <input class="pd" name="password" type="password" size="20">
-        </div>
+            <div class="div3">
+                <p class="p3">密码：</p>
+                <input class="pd" name="password" type="password" size="20">
+            </div>
 
 
 
 
-        </table>
+            </table>
 
-        <input class=" regester" type="submit" value="注册">
-        <div class="mess">同意《服务协议》 和 《隐私协议》</div>
+            <input class=" regester" type="submit" value="注册">
+            <div class="mess">同意《服务协议》 和 《隐私协议》</div>
 
-    </form>
-</div>
-<script>
+        </form>
+    </div>
+    <script>
 
-    document.getElementById("phone").oninvalid=function(){
-        this.setCustomValidity("请正确输入11位数字呦");
-    };
-</script>
+        document.getElementById("phone").oninvalid = function () {
+            this.setCustomValidity("请正确输入11位数字呦");
+        };
+    </script>
 
 </body>
+
 </html>
