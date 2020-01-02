@@ -1,0 +1,181 @@
+.topnav {
+  width: 100%;
+  height: 36px;
+  color: #333;
+  background: #f4f4f4;
+}
+.topnav-left {
+  float: left;
+}
+.topnav-left a,
+.topnav-left span {
+  line-height: 36px;
+  color: #666666;
+  margin: 0 10px;
+}
+.topnav-right {
+  float: right;
+}
+.topnav-right li {
+  float: left;
+}
+.topnav-right .xyjblue {
+  color: #00a4ff;
+}
+.topnav-right a,
+.topnav-right span {
+  line-height: 36px;
+  color: #666666;
+  margin: 0 10px;
+}
+
+.topnav-right .none {
+  display: none;
+}
+.topnav .tr-blue:hover {
+  color: #0066cc;
+}
+.topnav-right li:nth-child(4):hover span {
+  display: block;
+}
+.topnav-right li:nth-child(4):hover {
+  z-index: 2;
+  background-color: #ffffff;
+}
+.topnav-right li:nth-child(5):hover span {
+  display: block;
+}
+.topnav-right li:nth-child(5):hover {
+  z-index: 2;
+  background-color: #ffffff;
+}
+.topnav-right li:nth-child(4) {
+  position: relative;
+  display: inline-block;
+  width: 92px;
+  color: #666;
+  text-align: center;
+  border: 1px solid transparent;
+  border-bottom: none;
+}
+.topnav-right li:nth-child(5) {
+  position: relative;
+  display: inline-block;
+  width: 92px;
+  color: #666;
+  text-align: center;
+  border: 1px solid transparent;
+  border-bottom: none;
+}
+/* 搜索栏 */
+.search {
+  width: 100%;
+  height: 80px;
+  float: left;
+}
+.search .logo {
+  line-height: 110px;
+  float: left;
+}
+.search .search-button {
+  float: left;
+}
+.search ul {
+  float: right;
+}
+.search .tel-list-more {
+  display: none;
+}
+/* .search.box-phone-number .tel-list-more:hover li {
+  display: block;
+} */
+.search input {
+  margin-left: 200px;
+  margin-top: 20px;
+  padding: 0 45px 0 5px;
+  float: left;
+  width: 340px;
+  height: 30px;
+}
+.search-button {
+  position: relative;
+}
+.search-button button {
+  margin-top: 20px;
+  position: absolute;
+  right: 0;
+  float: left;
+  width: 42px;
+  height: 30px;
+  background-color: #a4cbff;
+  border: none;
+}
+/* 导航栏 */
+.navigation {
+  width: 100%;
+  background-color: #2577e3;
+  float: left;
+  height: 40px;
+}
+.navigation-top i {
+  color: #0459ad;
+  line-height: 40px;
+  float: left;
+}
+.navigation-top a {
+  padding: 0 13px;
+  line-height: 40px;
+  color: #ffffff;
+  font-size: 15px;
+  float: left;
+}
+/* 直通车 */
+.through-train {
+  padding-top: 15px;
+  float: left;
+  width: 100%;
+  height: 30px;
+}
+.through-train-title {
+  margin-right: 20px;
+  text-align: center;
+  width: 70px;
+  margin-top: 2px;
+  line-height: 25px;
+  background-color: #74a8ed;
+  color: #ffffff;
+  float: left;
+}
+.through-train-right {
+  float: left;
+}
+.through-train-right a {
+  margin-right: 13px;
+  line-height: 30px;
+  color: #666666;
+}
+.content_middle {
+  margin-top: -15px;
+}
+.hot_recomm img {
+  float: left;
+  margin-right: 20px;
+}
+.mytupian {
+  margin-top: -30px;
+}
+.kedi p {
+  margin-left: 200px;
+}
+.kedi p:nth-child(3) {
+  margin-left: 450px;
+}
+.kedi {
+  margin-left: 220px;
+}
+.ditu {
+  margin-left: 220px;
+}
+.honour_wrap {
+  margin-left: 450px;
+}
