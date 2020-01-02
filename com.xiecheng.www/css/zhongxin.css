@@ -35,6 +35,11 @@
 .topnav .tr-blue:hover {
   color: #0066cc;
 }
+
+.topnav-right {
+  position: relative;
+}
+
 .topnav-right li:nth-child(4):hover span {
   display: block;
 }
@@ -156,9 +161,6 @@
   line-height: 30px;
   color: #666666;
 }
-.adv_pic img {
-  margin-top: 20px;
-}
-.topnav-right {
-  position: relative;
+.ditu img {
+  float: left;
 }

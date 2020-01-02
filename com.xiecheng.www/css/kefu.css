@@ -50,22 +50,24 @@
   background-color: #ffffff;
 }
 .topnav-right li:nth-child(4) {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 92px;
   color: #666;
   text-align: center;
   border: 1px solid transparent;
   border-bottom: none;
+  left: 186px;
 }
 .topnav-right li:nth-child(5) {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 92px;
   color: #666;
   text-align: center;
   border: 1px solid transparent;
   border-bottom: none;
+  right: 110px;
 }
 /* 搜索栏 */
 .search {
@@ -178,4 +180,7 @@
 }
 .honour_wrap {
   margin-left: 450px;
+}
+.topnav-right {
+  position: relative;
 }
